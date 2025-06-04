@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Sate Padang</title>
+    <style>
+        .galeri-container img {
+          width: 200px;
+          height: 150px; 
+          object-fit: cover; 
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          transition: transform 0.3s ease;
+        }
+
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        input, button {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+
+        button {
+          background-color: red;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+
+        button:hover {
+           background-color: darkred;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: white;
+        }
+          
+        header {
+            background-color: red;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sate Padang Putra Jambak</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda">
+        <h2>Selamat Datang di Sate Padang Putra Jambak</h2>
+        <p>Menyajikan makanan khas Nusantara yang siap mendunia. Kami memperkenalkan kelezatan Sate Padang kepada seluruh masyarakat, termasuk warga negara asing yang ingin mencicipi kuliner Indonesia.</p>
+    </section>
+
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Sate Padang merupakan makanan khas Sumatra Barat dengan bumbu kental dari rempah-rempah dan perpaduan daging sapi bakar yang disajikan dengan bawang goreng di atasnya.Kami juga menerima pesanan untuk hajatan, acara arisan, acara keluarga, dll</p>
+    </section>
+
+    <section id="produk">
+        <h2>Produk Kami</h2>
+        <ul>
+            <li>Sate Padang Setengah Porsi + Ketupat + Kerupuk Kulit</li>
+            <li>Sate Padang Satu Porsi + Ketupat + Kerupuk Kulit</li>
+            <li>Sate Padang + Keripik</li>
+        </ul>
+    </section>
+
+    <section id="galeri">
+        <h2>Galeri Sate Padang</h2>
+        <div class="galeri-container">
+            <img src="sate1.jpg" alt="Sate Padang 1">
+            <img src="sate2.jpg" alt="Sate Padang 2">
+            <img src="sate3.jpg" alt="Sate Padang 3">
+        </div>
+    </section>
+
+    <section id="pesanan">
+        <h2>Form Pemesanan</h2>
+        <form action="#" method="post">
+            <label for="nama">Nama Pemesan:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+    
+            <label for="hp">Nomor HP:</label><br>
+            <input type="tel" id="hp" name="hp" required><br><br>
+    
+            <label for="jumlah">Jumlah Pesanan:</label><br>
+            <input type="number" id="jumlah" name="jumlah" min="1" required><br><br>
+    
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+    
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: nazilamarss@gmail.com</p>
+        <p>Whatsapp: 085174171503</p>
+        <p>Shopeefood: Sate Padang Putra Jambak Taman Asri</p>
+        <p>Grabfood: Sate Padang Putra Jambak Taman Asri</p>
+        <p>Alamat: Jln. Taman Asri, di pertigaan depan Klinik Medika 24 Jam</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sate Padang Putra Jambak. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
